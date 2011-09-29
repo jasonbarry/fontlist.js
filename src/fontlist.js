@@ -197,9 +197,8 @@
       'Type Embellishments One LET',
       'Zapfino'
     ];
-    var installed = [];
-    
-    var el  = '#fontlist_test';
+    var installed = [],
+        el  = '#fontlist_test';
         
     // create element to test font sizes
     $('<p>')
@@ -226,11 +225,12 @@
     // return array of installed fonts
     return installed;
     
-  
+    // returns element's width
     function getW(el) {
       return $(el).css('width');
     };
     
+    // returns element's height
     function getH() {
       return $(el).css('height');
     };
